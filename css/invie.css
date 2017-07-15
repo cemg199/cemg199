@@ -316,6 +316,7 @@ table, td, th{
   cursor: pointer;
   z-index: 3;
   display: none;
+  color: white;
 
   position: absolute;
   left: 10px;
@@ -343,6 +344,19 @@ table, td, th{
 
 
 @media screen and (max-width: 800px){
+
+
+  /*PRECIOS---------*/
+
+    .tabla{
+      margin: 20px 20px;
+    }
+
+    .tabla .contenedor{
+      overflow: auto;
+      border: 1px solid #273b47;
+    }
+  /*---------PRECIOS*/
 
 
   /*----------PORTADA */
@@ -543,6 +557,10 @@ header{
 
   /*----------MENU y PORTADA*/
 
+  .header , .header .contenedor{
+    position: static;
+  }
+
   .burguer-button{
     display: block;
   }
@@ -708,6 +726,16 @@ header{
 }
 
 @media screen and (max-width: 356px){
+
+
+  /*MENU -------*/
+
+
+  .header , .header .contenedor{
+    position: static;
+  }
+
+  /*--------MENU*/
 
   /*----------GUITARRAS*/
 
