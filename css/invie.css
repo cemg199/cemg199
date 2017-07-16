@@ -1,4 +1,5 @@
 
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?gtzfm6');
@@ -326,7 +327,7 @@ table, td, th{
 .video-responsive-contenedor{
   position: relative;
   padding-top: 56.25%;
-  margin-bottom: 80px;
+  margin: 0;
 }
 
 .video-responsive-src{
@@ -337,7 +338,15 @@ table, td, th{
   top: 0;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+
+}
+
+.video-demo{
+
+  max-width: 500px;
+  margin: 0 auto 80px;
+  border: 4px solid #3c5b6e;
+
 }
 
 /*++++++++++++++++++++++++ MEDIA QUERIES +++++++++++++++++++++++++++++++++*/
@@ -386,6 +395,7 @@ table, td, th{
   /*PORTADA----------*/
 
   /*----------GUITARRAS*/
+
 
   .guitarras{
 
@@ -436,6 +446,12 @@ table, td, th{
 
   #guitarras{
     margin-bottom: 30px;
+  }
+
+  .video-responsive-contenedor{
+    position: relative;
+    padding-top: 56.25%;
+    margin:0;
   }
 
   /*GUITARRAS----------*/
@@ -489,6 +505,12 @@ header{
 
 .contenedor-guitarra-a ol{
   padding: 0;
+}
+
+.video-responsive-contenedor{
+  position: relative;
+  padding-top: 56.25%;
+  margin:0;
 }
 
 /*GUITARRAS----------*/
@@ -551,6 +573,16 @@ header{
   }
 
   /*FOOTER----------*/
+
+  /*GUITARRAS ---------*/
+
+  .video-responsive-contenedor{
+    position: relative;
+    padding-top: 56.25%;
+    margin:0;
+  }
+
+  /*-----------GUITARRAS*/
 }
 
 @media screen and (max-width: 555px){
@@ -651,6 +683,14 @@ header{
   .contenedor-guitarra-a{
     padding: 0;
   }
+
+  .video-demo{
+
+    max-width: 500px;
+    margin: 0 10px 80px;
+    border: 4px solid #3c5b6e;
+
+  }
   /*GUITARRAS----------------*/
 
   /*----------------FOOTER*/
@@ -746,6 +786,7 @@ header{
   .guitarra.left img{
     width: 300px;
   }
+
 
   /*GUITARRAS----------*/
 
