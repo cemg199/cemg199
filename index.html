@@ -3,7 +3,6 @@
   <head>
     <title>Invie - Tus mejores guitarras!</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width= device-width, initial-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
@@ -35,8 +34,10 @@
     </section>
     <section id="guitarras" class="guitarras contenedor"> <!--GUITARRAS -->
       <h2>Nuestras Guitarras</h2> <!-- titulo -->
-      <div class="video-responsive-contenedor">
-        <iframe  class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY?ecver=1" frameborder="0" allowfullscreen></iframe>
+      <div class="video-demo">
+        <div class="video-responsive-contenedor">
+          <iframe  class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY?ecver=1" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
       <article class="guitarra right"> <!-- guitarra 1 -->
         <img data-src="images/invie-acustica.png|images/invie-acustica_2x.png" alt="foto invie acustica" width="350"/>
@@ -126,7 +127,7 @@
       function toggleMenu(){
          $menu.classList.toggle('active');
       };
-      
+
       function showMenu(){
          $menu.classList.add('active');
       };
@@ -138,13 +139,13 @@
       var bLazy = new Blazy({
         selector: 'img'
       });
-      
-        // GESTOS TOUCH-----
+
+      // GESTOS TOUCH-----
 
       var $body = document.body;
 
       var gestos = new Hammer($body);
-      
+
       gestos.on('swipeleft', hideMenu);
 
       gestos.on('swiperight', showMenu);
