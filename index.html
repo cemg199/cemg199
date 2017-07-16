@@ -126,6 +126,14 @@
       function toggleMenu(){
          $menu.classList.toggle('active');
       };
+      
+      function showMenu(){
+         $menu.classList.add('active');
+      };
+
+      function hideMenu(){
+         $menu.classList.remove('active');
+      };
 
       var bLazy = new Blazy({
         selector: 'img'
@@ -137,9 +145,9 @@
 
       var gestos = new Hammer($body);
       
-      gestos.on('swipeleft', toggleMenu);
+      gestos.on('swipeleft', hideMenu);
 
-      gestos.on('swiperight', toggleMenu);
+      gestos.on('swiperight', showMenu);
     </script>
   </body>
 </html>
