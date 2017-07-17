@@ -588,6 +588,10 @@ header{
 @media screen and (max-width: 555px){
 
   /*----------MENU y PORTADA*/
+  
+  figure img{
+    margin: 50px 0;
+  }
 
   .header , .header .contenedor{
     position: static;
