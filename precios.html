@@ -132,6 +132,14 @@
       function toggleMenu(){
          $menu.classList.toggle('active');
       };
+      
+        function showMenu(){
+         $menu.classList.add('active');
+      };
+
+      function hideMenu(){
+         $menu.classList.remove('active');
+      };
 
       var bLazy = new Blazy({
         selector: 'img'
