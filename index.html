@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width= device-width, initial-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
-    <link rel="stylesheet" href="css/invie.css"/>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet"> -->
+    <style>
+  @font-face{font-family:'icomoon';src:url(./fonts/icomoon.eot?gtzfm6);src:url(./fonts/icomoon.eot?gtzfm6#iefix) format("embedded-opentype"),url(./fonts/icomoon.ttf?gtzfm6) format("truetype"),url(./fonts/icomoon.woff?gtzfm6) format("woff"),url(./fonts/icomoon.svg?gtzfm6#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e9bd"}body{font-family:'Allerta',sans-serif;margin:0}.contenedor{max-width:800px;margin:auto;position:relative}.background{background-color:#466173;background-image:url(./images/background.png);background-size:cover}.button{border-radius:12px;background:#FE3E4E;color:#fff;border:none;padding:7px 12px;font-family:'Montserrat',sans-serif;font-size:18px;background:linear-gradient(to left,#FE3E4E,#ff7250);text-decoration:none}.header{position:relative}.portada{color:#fff;padding:20px}.logotipo{display:inline-block;margin-left:0}.menu li{display:inline-block;margin-left:30px}.menu li:before{content:'˚';font-size:50px;line-height:20px;color:#fff}.menu a{color:#fff;text-decoration:none}.menu{display:inline-block;font-size:24px;position:asolute;right:0;margin-top:12px}.titulo span{text-decoration:underline}.titulo{font-family:'Montserrat',sans-serif;font-size:70px;margin-bottom:15px;line-height:40px;margin-top:70px}.title-a{font-size:24px}.guitarras h2{font-family:'Montserrat',sans-serif;font-size:35px}.guitarras{color:RGBA(31,49,60,100);margin-bottom:60px}.portadaContenido{height:500px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.burguer-button{width:40px;border-radius:50%;line-height:40px;height:40px;background:#395667;text-align:center;z-index:3;display:none;color:#fff;position:absolute;left:10px;top:10px}.video-responsive-contenedor{position:relative;padding-top:56.25%;margin:0}.video-responsive-src{position:absolute;left:0;right:0;bottom:0;top:0;width:100%;height:100%}.video-demo{max-width:500px;margin:0 auto 80px;border:4px solid #3c5b6e}@media screen and (max-width: 800px){.titulo{font-size:45px;margin-top:30px}.title-a{font-size:18px}.portadaContenido{height:auto}.portadaContenido .button{margin-bottom:30px}.guitarras{text-align:center}#guitarras{margin-bottom:30px}.video-responsive-contenedor{position:relative;padding-top:56.25%;margin:0}}@media screen and (max-width: 650px){header{text-align:center}.menu li:first-child{margin:0}.menu ul{padding:0}.menu{position:static;display:block;text-align:center;margin-top:50px}.logotipo{display:block;margin:0}.video-responsive-contenedor{position:relative;padding-top:56.25%;margin:0}}@media screen and (max-width: 570px){.video-responsive-contenedor{position:relative;padding-top:56.25%;margin:0}}@media screen and (max-width: 555px){figure img{margin:50px 0}.button{display:inline-block}.header{position:static}.burguer-button{display:block}.portada .contenedor{position:static}.menu ul{flex:1}.menu li{display:block;margin:0;border-bottom:1px solid #fff;padding:10px 0}.menu li::before{content:none}.menu li:first-child{border-top:1px solid #fff}.menu{background:rgba(255,109,80,.8);position:fixed;left:-100%;top:0;bottom:0;right:0;z-index:2;margin:0;display:flex;align-items:center;width:100%}.portadaContenido{display:block;text-align:center}.title-a{margin-bottom:30px}.titulo{font-size:36px}.title-a,.button{font-size:15px}.video-demo{max-width:500px;margin:0 10px 80px;border:4px solid #3c5b6e}}@media screen and (max-width: 356px){.header{position:static}}@media screen and (-webkit-min-device-pixel-ratio: 2){.background{background-image:url(./images/background2x.png)}}
+    </style>
   </head>
   <body>
     <section id="portada" class="portada background "> <!--PORTADA-->
@@ -111,7 +113,16 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
     <script>
+
+    WebFont.load({
+
+      google: {
+        families: ['Montserrat:400,700:latin','Allerta::latin']
+      }
+    });
+
       var $burguerButton = document.getElementById('burguer-button');
       var $menu          = document.getElementById('menu');
 
@@ -144,5 +155,6 @@
 
       gestos.on('swiperight', showMenu);
     </script>
+    <link rel="stylesheet" href="css/invie.css"/>
   </body>
 </html>
